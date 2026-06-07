@@ -103,29 +103,61 @@ ejaan yang benar, yaitu FROM php:8.2-apache.
 
 ---
 
-## Permasalahan 1
+## Permasalahan 7
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- NGINX tidak berjalan
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
+- masalah yang sama sebelumnya tanda :
+```nginx
+
+```
+- nama web dan nomor port salah
+```
+    upstream backend {
+
+        server web11:80;
+        server web2:80;
+        server web3:8080;
+
+    }
+```
 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- hapus tanda tersebut
+- seharusnya:
+```
+    upstream backend {
+
+        server web1:80;
+        server web2:80;
+        server web3:80;
+
+    }
+
+```
 
 ---
 
-## Permasalahan 1
+## Permasalahan 8
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- web 2 gagal diakses
+- kesalahan text di docker-compose.yml
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
-
+- web2 `DB_PASS: wrongpassword`
+- network di blok web3 tidak ada `frontend`
+ 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- ubah menjadi `DB_PASS: student123`
+- seharusnya:
+```
+networks:
+  - frontend
+  - backend
+```
 
 ---
 
