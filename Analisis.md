@@ -90,16 +90,16 @@ ejaan yang benar, yaitu FROM php:8.2-apache.
 
 ---
 
-## Permasalahan 1
+## Permasalahan 6
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- placeholder belum diganti ke nama mahasiswa
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
+- placeholder masih default
 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- edit nama mahasiswa di init.sql, dan index.php setiap web
 
 ---
 
