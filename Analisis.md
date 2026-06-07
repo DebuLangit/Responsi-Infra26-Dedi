@@ -73,16 +73,20 @@ ejaan yang benar, yaitu FROM php:8.2-apache.
 
 ---
 
-## Permasalahan 1
+## Permasalahan 5
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- database belum bisa jalan
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
+- ada tanda : 
+```sql
+
+```
+
 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- hapus tanda di penyebab tersebut
 
 ---
 
