@@ -41,16 +41,18 @@ volumes:
 
 ---
 
-## Permasalahan 1
+## Permasalahan 3
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- unable to prepare context: path "D:\\HDD\\docker_build\\Responsi-Infra26-Dedi\\web33" not foun
+d
+
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
+- dalam file yml tepatnya di blok web3 `context: ./web33`
 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- edit menjadi `context: ./web3`
 
 ---
 
