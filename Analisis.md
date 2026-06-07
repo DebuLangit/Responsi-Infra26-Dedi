@@ -56,16 +56,20 @@ d
 
 ---
 
-## Permasalahan 1
+## Permasalahan 4
 
 ### Gejala
-Jelaskan gejala yang ditemukan.
+- Docker gagal mem-build container untuk web1 dan web3 dengan peringatan bahwa sistem
+tidak dapat menemukan base image yang diminta di dalam registry.
+
 
 ### Penyebab
-Jelaskan akar penyebab masalah.
+- Terdapat kesalahan pengetikan (typo) yang disengaja pada penamaan base image PHP di dalam file Dockerfile. Pada web1/Dockerfile tertulis FROM php:8.2-apach, dan pada
+web3/Dockerfile tertulis FROM php:8.2-apche.
 
 ### Solusi
-Jelaskan langkah perbaikan yang dilakukan.
+- Mengubah dan memperbaiki penulisan nama image di kedua file Dockerfile tersebut menjadi
+ejaan yang benar, yaitu FROM php:8.2-apache.
 
 ---
 
