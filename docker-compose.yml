@@ -1,6 +1,6 @@
 version: "3.9"
 
-services
+services:
 
   nginx:
     build:
@@ -74,7 +74,7 @@ services
       - backend
 
 volumes:
-  database-data:
+  db-data:
 
 networks:
   frontend:
